@@ -10,36 +10,37 @@ import java.util.List;
 
 public class AccordianLayout {
 
-    public Accordion accordion=new Accordion();
-    public List<Button> buttonList=new ArrayList<>();
+    public Accordion accordion = new Accordion();
+    public List<Button> buttonList = new ArrayList<>();
 
     public Accordion getAccordion() {
         return createAccordian();
     }
-    public List<Button> getButtons(){
+
+    public List<Button> getButtons() {
         return createButtons();
     }
 
 
-    public Accordion createAccordian(){
-        TitledPane syllabusPane=new TitledPane();
-        VBox syllabusBox=new VBox();
+    public Accordion createAccordian() {
+        TitledPane syllabusPane = new TitledPane();
+        VBox syllabusBox = new VBox();
         syllabusPane.setText("Syllabus");
         syllabusPane.setContent(syllabusBox);
 
-        TitledPane previous_paper=new TitledPane();
-        VBox previous_paper_box=new VBox();
+        TitledPane previous_paper = new TitledPane();
+        VBox previous_paper_box = new VBox();
         previous_paper.setText("Previous year paper");
         previous_paper.setContent(previous_paper_box);
 
 
-        TitledPane prev_paper_ak=new TitledPane();
-        VBox prev_paper_ak_box=new VBox();
+        TitledPane prev_paper_ak = new TitledPane();
+        VBox prev_paper_ak_box = new VBox();
         prev_paper_ak.setText("Previous yr paper with Ans key");
         prev_paper_ak.setContent(prev_paper_ak_box);
 
-        TitledPane study_material=new TitledPane();
-        VBox study_material_box=new VBox();
+        TitledPane study_material = new TitledPane();
+        VBox study_material_box = new VBox();
         study_material.setText("Syllabus");
         study_material.setContent(study_material_box);
 
@@ -53,7 +54,7 @@ public class AccordianLayout {
 
     }
 
-    public List<Button> createButtons(){
+    public List<Button> createButtons() {
         return null;
     }
 
